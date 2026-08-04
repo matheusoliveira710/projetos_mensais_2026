@@ -1,0 +1,6 @@
+caracteristicas que deve possuir:
+
+foto de perfil ✅
+nome ✅
+bio ❌
+links para as redes sociais (Github e Linkedin), links ajustados ✅
