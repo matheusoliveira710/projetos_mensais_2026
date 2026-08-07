@@ -1,5 +1,5 @@
 <!--
-    Criar uma aplicação interativa onde o usuário pode adicionar novas tarefas, apagar e editar tarefas existentes.
+    Crie uma aplicação interativa onde o usuário pode adicionar novas tarefas, apagar e editar tarefas existentes.
 -->
 
 <!DOCTYPE html>
@@ -13,8 +13,88 @@
 <body>
     <h1>Lista de Tarefas</h1>
     <p>Adicione, edite e apague suas tarefas!</p>
-    <section>
+    <section class="formulario">
+        <div class="campo">
 
+            <label>
+                Nome da tarefa
+            </label>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite a tarefa"
+            >
+
+        </div>
+
+        <div class="campo">
+
+            <label>
+                Prazo
+            </label>
+
+            <div class="data-hora-inputs">
+
+                <input
+                    type="date"
+                    id="prazo"
+                >
+
+                <input
+                    type="time"
+                    id="hora"
+                >
+            </div>
+
+            <div class="campo">
+                <label>
+                    Prioridade
+                </label>
+                <select id="prioridade">
+                    <option value="alta">
+                        Alta 
+                    </option>
+
+                    <option value="média">
+                        Média
+                    </option>
+
+                    <option value="baixa">
+                        Baixa
+                    </option>
+                </select>
+            </div>
+        </div>
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="🔎 Pesquisar..."
+            onkeyup="pesquisarTarefa()"
+        >
+        <button onclick="criarTarefa()">
+            Criar tarefa
+        </button>
+    </section>
+    <section class="kanban">
+
+        <div class="coluna" id="a-fazer">
+            <h2 id="titulo-a-fazer">
+                A Fazer (0) 
+            </h2>
+        </div>
+
+        <div class="coluna" id="em-andamento">
+            <h2 id="titulo-em-andamento">
+                Em andamento (0)
+            </h2>
+        </div>
+
+        <div class="coluna" id="concluido">
+            <h2 id="titulo-concluido">
+                Concluído (0)
+            </h2>
+        </div>
     </section>
     <footer>
         &copy; 2026 - Desenvolvido por Matheus Oliveira
