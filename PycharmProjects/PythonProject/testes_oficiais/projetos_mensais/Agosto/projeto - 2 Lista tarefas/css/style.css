@@ -102,8 +102,7 @@ main {
     font-size: 14px;
 }
 
-.formulario input, 
-.formulario select, .formulario button {
+.formulario input, .formulario select, .formulario button {
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -143,4 +142,76 @@ main {
         width: 100%;
         padding: 10px;
     }
+
+    .campo {
+        width: 100%;
+    }
+
+    .campo input, 
+    .campo select {
+        width: 100%;
+    }
+
+    .data-hora-inputs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .data-hora-inputs input {
+        width: 100%;
+    }
+
+    #pesquisa {
+        width: 100%;
+    }
+
+    .formulario button {
+        width: 100%;
+    }
+}
+
+.data-hora {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.data-hora p {
+    margin: 0;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.campo input, .campo select {
+    min-width: 180px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.data-hora-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.pesquisa {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pesquisa input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+#pesquisa {
+    max-width: 220px;
 }
