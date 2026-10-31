@@ -1,3 +1,5 @@
+// Criar Botões para aumentar, retirar e resetar o valor do contador.
+
 let valor = 0;
 const aumentar = document.getElementById("aumentar");
 const retirar = document.getElementById("retirar");
