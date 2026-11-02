@@ -1,0 +1,21 @@
+body {
+    background-color: #75c978;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+}
+
+.h1{
+    color: rgb(66, 64, 64);
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    color: rgb(66, 64, 64);
+    font-size: 16px;
+    text-align: center;
+}
